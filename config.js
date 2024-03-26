@@ -14,7 +14,7 @@ function getDatabaseUri() {
   if (process.env.NODE_ENV === "test") {
     return "jobly_test";
   } else if (process.env.NODE_ENV === "production") {
-    return process.env.PRODUCTION_DATABASE_URL || "postgres://ygdzfddj:v42WBhqKXs14gd7rmVGjFjleopT6RsEy@bubble.db.elephantsql.com/ygdzfddj";
+    return process.env.PRODUCTION_DATABASE_URL || "postgresql://ygdzfddj:v42WBhqKXs14gd7rmVGjFjleopT6RsEy@bubble.db.elephantsql.com/ygdzfddj";
   } else {
     return process.env.DATABASE_URL || "jobly";
   }
